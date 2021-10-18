@@ -1,0 +1,253 @@
+{{extend './_layouts/layout.html'}} 
+
+
+{{block 'title'}}
+<title>多人博客-首页</title>
+{{/block}}
+
+
+ {{block 'style'}} {{/block}}
+
+ {{block 'content'}} 
+ <div class="tab-pane" id="an_li">
+    <!-- 大图 -->
+    <section class="ys-banner">
+      <div class="container-fluid">
+        <img src="../public/img/星空.jpg" class="img-responsive">
+      </div>
+    </section>
+
+    <!-- 全部作品 -->
+    <section class="ys-works">
+      <div class="container-fluid">
+        <!-- 精品案例 -->
+        <div class="row example">
+          <div class="col-sm-6 col-sm-offset-3 min-box">
+            <img src="../public/img/精品案例.png">
+          </div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="navparents">
+          <ul class="nav nav-tabs max-box container">
+            <li class="active col-xs-2">
+              <a href="#works" data-toggle="tab">全部作品</a>
+            </li>
+            <li class="col-xs-2">
+              <a href="#movie" data-toggle="tab">微电影</a>
+            </li>
+            <li class="col-xs-2">
+              <a href="#image" data-toggle="tab">形象片</a>
+            </li>
+            <li class="col-xs-2">
+              <a href="#publicity" data-toggle="tab">宣传片</a>
+            </li>
+            <li class="col-xs-2">
+              <a href="#TVC" data-toggle="tab">TVC</a>
+            </li>
+            <li class="col-xs-2">
+              <a href="#shopping" data-toggle="tab">电视购物</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 内容区 -->
+        <!-- 全部作品区 -->
+        <div class="tab-content">
+          <div role="tabpanel" class="total tab-pane active" id="works">
+            <ul id="post_list">
+
+              <!-- 作品1 -->
+              <li class="box1 col-xs-6 col-sm-4" onclick="clickExampleVideoItem(this)" data-video="video/jialong.mp4">
+                <div>
+                  <img src="../public/img/01.png" class="img-responsive">
+                </div>
+                <div class="media el-not-show">
+                  <video src="../public/video/jialong.mp4" title="中国辣条好味道--佳龙造"></video>
+                </div>
+                <div class="masking">
+                  <h2>佳龙造</h2>
+                  <p>郑州 | 0'11"</p>
+                </div>
+                <div class="popup el-not-show">中国辣条好味道--佳龙造</div>
+              </li>
+
+              <!-- 作品2 -->
+              <li class="box1 col-xs-6 col-sm-4" onclick="clickExampleVideoItem(this)"
+                data-video="http://www.hnyoushi.cn/uploads/file/20210623/8271294a887a9cc90343f7d96e48c519.mp4">
+                <div>
+                  <img src="../public/img/02.png" class="img-responsive">
+                </div>
+                <div class="media el-not-show">
+                  <video src="http://www.hnyoushi.cn/uploads/file/20210623/8271294a887a9cc90343f7d96e48c519.mp4"
+                    title="佰岁帮足疗机"></video>
+                </div>
+                <div class="masking">
+                  <h2>佰岁帮</h2>
+                  <p>郑州 | 60"</p>
+                </div>
+                <div class="popup el-not-show">佰岁帮足疗机</div>
+              </li>
+
+              <!-- 作品3 -->
+              <li class="box1 col-xs-6 col-sm-4" onclick="clickExampleVideoItem(this)"
+                data-video="http://www.hnyoushi.cn/uploads/file/20210623/aa22c245658d125047cf2e1491631ccc.mp4">
+                <div>
+                  <img src="../public/img/03.png" class="img-responsive">
+                </div>
+                <div class="media el-not-show">
+                  <video src="http://www.hnyoushi.cn/uploads/file/20210623/aa22c245658d125047cf2e1491631ccc.mp4"
+                    title="清恬集送试纸板"></video>
+                </div>
+                <div class="masking">
+                  <h2>清恬集</h2>
+                  <p>郑州 | 60"</p>
+                </div>
+                <div class="popup el-not-show">清恬集送试纸板</div>
+              </li>
+
+
+              <!-- 作品4 -->
+              <li class="box1 col-xs-6 col-sm-4" onclick="clickExampleVideoItem(this)"
+                data-video="http://www.hnyoushi.cn/uploads/file/20210623/3fd921cefe11737fcf8b2afc859652b9.mp4">
+                <div>
+                  <img src="../public/img/04.png" class="img-responsive">
+                </div>
+                <div class="media el-not-show">
+                  <video src="http://www.hnyoushi.cn/uploads/file/20210623/3fd921cefe11737fcf8b2afc859652b9.mp4"
+                    title="清恬集测血糖"></video>
+                </div>
+                <div class="masking">
+                  <h2>清恬集</h2>
+                  <p>郑州 | 60"</p>
+                </div>
+                <div class="popup el-not-show">清恬集测血糖</div>
+              </li>
+
+              <!-- 作品5 -->
+              <li class="box1 col-xs-6 col-sm-4" onclick="clickExampleVideoItem(this)"
+                data-video="http://www.hnyoushi.cn/uploads/file/20210623/d169d681c4005df9c6cc7e960807827e.mp4">
+                <div>
+                  <img src="../public/img/05.png" class="img-responsive">
+                </div>
+                <div class="media el-not-show">
+                  <video src="http://www.hnyoushi.cn/uploads/file/20210623/d169d681c4005df9c6cc7e960807827e.mp4"
+                    title="百岁通激光治疗仪"></video>
+                </div>
+                <div class="masking">
+                  <h2>百岁通治疗仪</h2>
+                  <p>郑州 | 0'11"</p>
+                </div>
+                <div class="popup el-not-show">百岁通激光治疗仪</div>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- 微电影区 -->
+          <div role="tabpanel" class="tab-pane" id="movie">例子2</div>
+          <!-- 形象片区 -->
+          <div role="tabpanel" class="tab-pane" id="image">例子3</div>
+          <!-- 宣传片区 -->
+          <div role="tabpanel" class="tab-pane" id="publicity">例子4</div>
+          <!-- TVC区 -->
+          <div role="tabpanel" class="tab-pane" id="TVC">例子5</div>
+          <!-- 电视购物 -->
+          <div role="tabpanel" class="tab-pane" id="shopping">例子6</div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- 视频弹窗遮罩层 -->
+    <section class="ys-mask">
+      <div class="container-fluid">
+        <!-- 遮罩层 -->
+        <div class="video-mask  el-not-show">
+          <!-- 黑色弹窗 -->
+          <div class="video-container col-xs-10 col-xs-offset-1">
+            <div class="video-min-container">
+              <!-- 关闭弹窗 -->
+              <span class="glyphicon glyphicon-remove-circle"></span>
+
+
+              <!-- 大视频 -->
+              <!-- TODO:这里可能要改,直接在video上写src可能会有浏览器兼容问题 -->
+              <video id="big-video" class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <!-- <source type="video/mp4"> -->
+              </video>
+
+
+
+
+              <!-- 进度条 -->
+              <div class="progressBar">
+                <!-- 时间条 -->
+                <div class="timeBar"></div>
+              </div>
+              <!-- 视频播放时间 -->
+              <div class="progressTime">
+                <!-- 视频当前播放时间 -->
+                <span class="current">00:00</span> /
+                <!-- 视频播放总时间 -->
+                <span class="duration"></span>
+                <!-- 全屏 -->
+                <span class="glyphicon glyphicon-fullscreen"></span>
+              </div>
+
+              <!-- 大视频上面的遮罩层 -->
+              <div class="video-control col-xs-12">
+                <!-- 遮罩层上面的控件 -->
+                <!-- 暂停控件 -->
+                <span class="glyphicon glyphicon-play"></span>
+                <!-- 播放上一个视频 -->
+                <span class="glyphicon glyphicon-step-backward"></span>
+                <!-- 播放下一个视频 -->
+                <span class="glyphicon glyphicon-step-forward"></span>
+                <!-- 遮罩层上的文字 -->
+                <!-- <div class="video-control-words"> -->
+                <dl class="col-xs-12 video-control-words">
+                  <dt>中国辣条好味道--佳龙造</dt>
+                  <dd>时间：2021-06-23 【TVC】</dd>
+                </dl>
+                <!-- </div> -->
+              </div>
+
+
+
+
+              <!-- 视频介绍 -->
+              <div class="video-introduct col-xs-12">
+                <dl class="col-xs-12">
+                  <dt>摘要</dt>
+                  <dd>中国辣条好味道--佳龙造</dd>
+                </dl>
+                <h4 class="hidden-xs"><span class="glyphicon glyphicon-globe"></span>其他视频门户渠道</h4>
+                <ul class="clearfix hidden-xs">
+                  <li class="pull-left"><a href="http://">腾讯视频</a></li>
+                  <li class="pull-left"><a href="http://">微博</a></li>
+                  <li class="pull-left"><a href="http://">今日头条</a></li>
+                  <li class="pull-left"><a href="http://">土豆</a></li>
+                  <li class="pull-left"><a href="http://">优酷</a></li>
+                  <li class="pull-left"><a href="http://">A站</a></li>
+                  <li class="pull-left"><a href="http://">乐视视频</a></li>
+                  <li class="pull-left"><a href="http://">B站</a></li>
+                  <li class="pull-left"><a href="http://">搜狐视频</a></li>
+                  <li class="pull-left"><a href="http://">PPTV</a></li>
+                  <li class="pull-left"><a href="http://">爱奇艺</a></li>
+                  <li class="pull-left"><a href="http://">抖音</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+ {{/block}}
+
+
+ {{block 'script'}} {{/block}}

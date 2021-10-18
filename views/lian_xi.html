@@ -1,0 +1,35 @@
+{{extend './_layouts/layout.html'}} 
+
+
+{{block 'title'}}
+<title>多人博客-首页</title>
+{{/block}}
+
+
+ {{block 'style'}} {{/block}}
+
+ {{block 'content'}} 
+        <!-- 联系 -->
+        <div class="tab-pane" id="lian_xi">
+            <div class="lxbk">
+              <img src="../后三/imges/lx101.jpg">
+            </div>
+            <div class="lxbody">
+              <h3 unselectable="on" style="user-select: none;">河南优柿文化传媒有限公司</h3>
+              <div class="info" unselectable="on" style="user-select: none;">
+                <p class="addr" unselectable="on" style="user-select: none;">郑州中原国家广告产业园4号楼</p>
+                <!-- 郑州中原区国家大学科技园9号楼 -->
+                <p class="tel" unselectable="on" style="user-select: none;">电话：13203859655 13608679701</p>
+                <p class="email" unselectable="on" style="user-select: none;">邮箱：86829056@qq.com</p>
+                <p class="zipcode" unselectable="on" style="user-select: none;">邮编：450000</p>
+              </div>
+              <div class="map">
+                <!--百度地图容器-->
+                <div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+              </div>
+            </div>
+          </div>
+ {{/block}}
+
+
+ {{block 'script'}} {{/block}}
