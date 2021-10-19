@@ -14,7 +14,7 @@ router.get("/an_li", (req, res) => {
 });
 
 // 来到品牌传播
-router.get("/pin_pai", (req, res) => {
+router.get("/#pin_pai", (req, res) => {
     res.render("pin_pai.html");
     console.log("欢迎来到品牌传播！！！")
 });
