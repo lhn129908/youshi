@@ -1,0 +1,105 @@
+.dt_wenben{
+    position: relative;
+    width: 100%;
+    background:#232429 url(../image/news_article_bg.png) no-repeat;
+    .dt_neirong{
+        margin: auto;
+        padding-bottom: 50px;
+        width: 80%;
+        height: 100%;
+        .dt_top{
+            position: relative;
+            h1{
+                color: #ffffff;
+                font-size: 30px;
+
+            }
+            &::after{
+                content: "";
+                width: 5%;
+                max-width: 80px;
+                height: 1px;
+                position: absolute;
+                top: 30px;
+                right: 0;
+                background: url(../image/hengxian.png) repeat-x;
+            }
+            .dt_top_riqi{
+                color: #989a99;
+                margin-top: 10px;
+                padding-left: 22px;
+                background: url(../image/hengxian.png) no-repeat left center;
+            }
+        }
+        .dt_neirong_zhaopian{
+            display: inline-block;
+            width: 60%;
+            // height: 60vh;
+            position: relative;
+            left: 50%;
+            margin-left: -30%;
+            
+        }
+        .dt_wenzhang{
+            margin-top: 100px;
+            font-size: 18px;
+            line-height: 2em;
+            color:#a2a2a7 !important;
+        }
+        .dt_tags{
+            color: #ffffff;
+            a{  
+                display: inline-block;
+                font-size: 14px;
+                line-height: 20px;
+                color: #a2a2a7;
+            }
+        }
+        .dt_weibu{
+            height: 50px;
+            margin-top: 40px;
+            border-top: 1px solid #707076;
+            a{
+                color: #d1d1d3;
+                line-height: 26px;
+                font-size: 16px;
+                text-decoration: none;
+            }
+        }
+    }
+
+
+
+
+}
+@media screen and (min-width: 1200px) {
+    .dt_wenben{
+        width: 80%;
+        margin: auto;
+        top: -240px;
+        padding-top: 20px !important;
+    }
+    
+        
+    
+}
+@media screen and (min-width: 768px) and (max-width:1200px){
+    .dt_wenben{
+        top: -100px; 
+        padding-top: 70px !important;
+    }
+    
+       
+    
+}
+@media screen and (max-width: 768px){
+    .dt_wenben{
+        top: -10vh;
+        padding-top: 5vh !important;
+    }
+   
+    .dt_neirong_zhaopian{
+        width: 100% !important;
+        margin-left: -50% !important;
+    }
+}

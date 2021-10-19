@@ -1,1 +1,0 @@
-consile.log("aaa")

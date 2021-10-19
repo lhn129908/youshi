@@ -1,0 +1,60 @@
+{{extend '../_layouts/layout.html'}}
+
+
+{{block 'title'}}
+<title>新闻动态</title>
+{{/block}}
+
+
+
+{{block 'style'}}
+<link rel="stylesheet" href="../../public/css/neirong.css">
+{{/block}}
+
+
+
+
+{{block 'content'}}
+<div style="width: 100%;" id="xinwen_dongtai">
+    <img src="../../public/img/动态.png" class="dt_datu">
+    <div class="dt_wenben">
+        <div class="dt_neirong">
+            <div class="dt_top">
+                <h1 class="dt_top_biaoti">{{article.name}}</h1>
+                <p class="dt_top_riqi">{{article.year}}-{{article.month}}-{{article.day}}</p>
+            </div>
+            <div class="dt_wenzhang">
+                <p>{{article.p0}}</p>
+                <p>{{article.h1}}</p>
+                <p>{{article.p1}}</p>
+                <p>{{article.h2}}</p>
+                <p>{{article.p2}}</p>
+                <p><img src="{{article.img_wenben}}" class="dt_neirong_zhaopian"></p>
+                <p>{{article.h3}}</p>
+                <p>{{article.p3}}</p>
+                <p>{{article.h4}}</p>
+                <p>{{article.p4}}</p>
+                <p>{{article.h5}}</p>
+                <p>{{article.p5}}</p>
+                <p><br></p>
+            </div>
+            <div class="dt_tags">
+                TAG:
+                <a href="{{article.g1}}">{{article.t1}}</a>
+                <a href="{{article.g2}}">{{article.t2}}</a>
+                <a href="{{article.g3}}">{{article.t3}}</a>
+            </div>
+            <div class="dt_weibu">
+                <br>
+                <a href="/dong_tai/{{shang._id.toString()}}" class="col-xs-6">上一篇：{{shang.name}}</a>
+                <a href="/dong_tai/{{xia._id.toString()}}" class="col-xs-6">下一篇：{{xia.name}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{/block}}
+
+
+{{block 'script'}}
+
+{{/block}}
