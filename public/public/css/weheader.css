@@ -1,0 +1,129 @@
+#webody{
+  background-color: black;
+}
+#weTop .wetop1 img{
+  width: 100%;
+  height: 40%;
+}
+#weTop  .wetop2 {
+  width: 100%;
+  height: 178px;
+  background-color: black; 
+}
+#weTop .wetop2 .wetu {
+  width: 80%;
+  height: 62px;
+  margin-left: 10%;
+  padding-top: 58px;
+  /* background-color: wheat;  */
+}
+#weTop .wetop2 .wetu div{
+ text-align: center;
+}
+.jianjie{
+  background-color: black;
+}
+
+@media screen and (max-width: 996px){
+  .jianjie p{
+    text-align: justify;
+    line-height: 1.25em;
+    text-indent: 1em;
+    color: gray;
+    font-size: 14px;
+  }
+  .jianjie .jp1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  
+  }
+  .jianjie .jp1 img{
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.jianjie p{
+  text-align: justify;
+  line-height: 1.75em;
+  text-indent: 2em;
+  color: gray;
+  font-size: 18px;
+}
+
+
+
+.webody div img{
+  background-color: black;
+  width: 80%;
+  height: 80%;
+
+}
+@media screen and (min-width: 996px){
+  .jianjie .jp1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  
+  }
+  .jianjie .jp1 img{
+    width: 40%;
+    height: 40%;
+  }
+  .webc {
+    background-color: black;
+    position:relative;	
+    width: 80%;
+    left: 10%;
+  }
+  .webc .wep1{
+    font-size: 36px;
+    line-height: 2em;
+    color: #a2a2a7;
+    text-align: center;
+  }
+ .webc .wep2{
+      font-size: 18px;
+      text-indent:2em;
+      color: #a2a2a7;
+   }
+   .webc .wep5{
+    text-align: center;
+    font-size: 24px;
+    line-height: 2em;
+    color: #a2a2a7;
+  }
+  .webc .wep6{
+    font-size: 18px;
+    text-indent:2em;
+    color: #a2a2a7;
+  }
+}
+@media screen and (max-width: 996px){
+.webc {
+  background-color: black;
+}
+.webc .wep1{
+  font-size: 36px;
+  line-height: 2em;
+  color: #a2a2a7;
+  text-align: center;
+}
+.webc .wep2{
+  font-size: 14px;
+  text-indent:2em;
+  color: #a2a2a7;
+}
+.webc .wep5{
+  text-align: center;
+  font-size: 24px;
+  line-height: 2em;
+  color: #a2a2a7;
+}
+.webc .wep6{
+  font-size: 14px;
+  text-indent:2em;
+  color: #a2a2a7;
+}
+}

@@ -49,6 +49,16 @@ app.use(bodyParser.json());
 //挂载路由
 app.use("/", router);
 
+// app.get('/lian_xi',(req,res)=>{
+// 	res.render('lian_xi.html')
+// })
+// app.get('/wo_men',(req,res)=>{
+// 	res.render('wo_men.html')
+// })
+// app.get('/zhaop_in',(req,res)=>{
+// 	res.render('zhao_pin.html')
+// })
+
 app.listen(8000, () => {
     console.log("8000端口已启用");
   });
