@@ -1,0 +1,254 @@
+section.news {
+  padding-top: 58px;
+  background: url('../images/index_case_bg.png') no-repeat center top / 100% auto;
+}
+section.news > h2 {
+  text-align: center;
+}
+section.news > h2 a {
+  display: block;
+  margin: 0 auto;
+  width: 276px;
+  height: 61px;
+  background: url('../images/4dcbdb223686456f9e78f39dbf0ec69e.gif') no-repeat center / auto 100%;
+}
+section.news > h3 {
+  width: 90%;
+  max-width: 1300px;
+  margin: 60px auto 0;
+  text-align: center;
+  overflow: hidden;
+}
+section.news > h3 a {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 26px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff;
+  white-space: nowrap;
+  margin: 0 40px;
+}
+section.news > h3 a:hover,
+section.news > h3 a.on {
+  color: #29bc6b;
+}
+section.news > div.list {
+  margin: 35px 11px 0;
+}
+section.news > div.list a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+section.news > div.list a span.thumb {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding: 40.7% 0 0;
+  overflow: hidden;
+  position: relative;
+}
+section.news > div.list a span.thumb img {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+section.news > div.list a:hover span.thumb img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+section.news > div.list a span.date {
+  display: block;
+  width: 91px;
+  height: 91px;
+  position: absolute;
+  left: 5%;
+  top: 11px;
+  background: #29bc6b;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Arial';
+  text-align: center;
+  overflow: hidden;
+}
+section.news > div.list a span.date b {
+  font-size: 24px;
+  line-height: 34px;
+  display: block;
+  margin-top: 20px;
+}
+section.news > div.list a span.wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 22, 32, 0.5);
+  z-index: 1;
+}
+section.news > div.list a span.wrap span.info {
+  display: block;
+  width: 80%;
+  max-height: 64px;
+  overflow: hidden;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+section.news > div.list a:hover span.wrap span.info {
+  color: #29bc6b;
+}
+section.newsBox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 100px 100px 90px;
+  max-width: 1400px;
+  margin: -230px auto 0;
+  background: #232429 url('../images/news_article_bg.png') no-repeat center top / 100% auto;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #d1d1d3;
+}
+section.newsBox > div.content > div.top {
+  color: #fff;
+  position: relative;
+}
+section.newsBox > div.content > div.top:after {
+  content: '';
+  background: url('../images/934c4b6d4a5849f08834d2dced53ad43.gif') repeat-x center;
+  width: 5%;
+  max-width: 80px;
+  height: 1px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+section.newsBox > div.content > div.top h1 {
+  font-size: 30px;
+  line-height: 32px;
+  max-width: calc(100% - 100px);
+}
+section.newsBox > div.content > div.top p {
+  font-size: 12px;
+  color: #989a99;
+  margin-top: 10px;
+  padding-left: 22px;
+  background: url('../images/934c4b6d4a5849f08834d2dced53ad43.gif') no-repeat left center;
+}
+section.newsBox > div.content > div.body {
+  margin-top: 100px;
+  font-size: 18px;
+  line-height: 2em;
+  color: #a2a2a7;
+}
+section.newsBox > div.content > div.body * {
+  max-width: 100% !important;
+}
+section.newsBox > div.content > div.body p {
+  margin-bottom: 5px;
+  color: #a2a2a7 !important;
+}
+section.newsBox > div.content > div.bottom {
+  margin-top: 70px;
+  padding: 25px 0 0;
+  border-top: 1px solid #707076;
+}
+section.newsBox > div.content > div.bottom a {
+  color: #d1d1d3;
+  font-size: 22px;
+  line-height: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section.newsBox > div.content > div.others {
+  margin-top: 40px;
+}
+section.newsBox > div.content > div.others h3 {
+  font-size: 24px;
+  text-align: center;
+}
+section.newsBox > div.content > div.others > div.layui-row {
+  margin-top: 10px;
+}
+section.newsBox > div.content > div.others a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+section.newsBox > div.content > div.others a span.thumb {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding: 65.21% 0 0;
+  overflow: hidden;
+  position: relative;
+}
+section.newsBox > div.content > div.others a span.thumb img {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+section.newsBox > div.content > div.others a:hover span.thumb img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+section.newsBox > div.content > div.others a span.info {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 10px 0;
+  background: rgba(21, 22, 32, 0.5);
+  color: #fff;
+}
+section.newsBox > div.content > div.others a span.info span.title {
+  display: block;
+  margin: 0 15px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+section.newsBox > div.content > div.others a span.info span.desc {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

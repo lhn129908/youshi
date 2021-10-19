@@ -5,14 +5,14 @@ const mongoose = require("mongoose");
 const expressSession = require("express-session");
 const app = express();
 
-
-
-mongoose.connect("mongodb://localhost:27017");
+//建立皮牌案列数据库
+mongoose.connect("mongodb://localhost:27017/youshi");
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function () {
     console.log("连接成功");
 });
+
 
 app.use(
     expressSession({

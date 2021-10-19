@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
-
+//引入品牌models
+const pinpai = require("../models/pinpai")
 // 来到首页
 router.get("/", (req, res) => {
     res.render("index.html");
@@ -12,8 +13,17 @@ router.get("/an_li", (req, res) => {
 });
 
 // 来到品牌传播
-router.get("/pin_pai", (req, res) => {
-    res.render("pin_pai.html");
+router.get("/pin_pai", async(req, res) => {
+    let Pinpai = await pinpai.find();
+    res.render("pin_pai.html",{Pinpai});
+});
+// 来到品牌传播详情
+router.get("/topic/:id", async(req, res) => {
+   var id =req.params['id'];
+   var result = await pinpai.findById(id);
+   var hub= await pinpai.find({num:"1"})
+
+    res.render("../views/topic/ppcb.html",{pinpai:result,hub});
 });
 
 // 来到动态

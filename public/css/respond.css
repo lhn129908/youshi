@@ -1,0 +1,449 @@
+@media screen and (max-width: 1400px) {
+  section.newsBox {
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  header.header nav.nav a {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.newsBox {
+    margin-top: -50px;
+    padding: 100px 60px 90px;
+  }
+  section.brand > div.list {
+    margin: 25px 15px 0;
+  }
+  section.about div.wrap {
+    margin: 55px 15px 108px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  header.header nav.nav a {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header.header div.search form {
+    width: 90%;
+  }
+  section.brand > h3,
+  section.cases > h3,
+  section.news > h3 {
+    margin-top: 40px;
+  }
+  section.brand > h3 a,
+  section.cases > h3 a,
+  section.news > h3 a {
+    font-size: 16px;
+  }
+  section.cases > div.list a span.info em {
+    font-size: 18px;
+  }
+  section.cases > div.list a span.info small {
+    margin-top: 5px;
+  }
+  section.cases > div.list a {
+    padding: 5px;
+  }
+  section.news > a.more,
+  section.cases > a.more {
+    font-size: 18px;
+  }
+  section.news > div.list a {
+    padding: 5px;
+  }
+  section.news > div.list a span.date {
+    width: 64px;
+    height: 64px;
+    font-size: 12px;
+    top: 5px;
+  }
+  section.news > div.list a span.date b {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  section.news > div.list a span.wrap span.info {
+    font-size: 16px;
+  }
+  section.footer > div.clearfix a {
+    margin-right: 15px;
+  }
+  section.footer > div.clearfix a img {
+    height: 32px;
+  }
+  section.newsBox {
+    margin-top: 0;
+    padding: 100px 30px 90px;
+  }
+  section.newsBox > div.content > div.top h1 {
+    font-size: 24px;
+  }
+  section.newsBox > div.content > div.body {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  section.newsBox > div.content > div.bottom {
+    margin-top: 40px;
+    padding: 15px 0 0;
+  }
+  section.newsBox > div.content > div.bottom a {
+    font-size: 16px;
+  }
+  section.brand > h3 a {
+    margin: 0 30px;
+  }
+  section.brand > div.list a {
+    padding: 5px;
+  }
+  div.popRec div.popBox div.top h3 {
+    font-size: 24px;
+  }
+  div.popRec div.popBox div.top p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  div.popRec div.popBox div.bottom {
+    margin-top: 20px;
+    border-top: 1px solid #2c2d35;
+    padding-top: 20px;
+    height: calc(100% - 113px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  div.popRec div.popBox div.bottom h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  div.popRec div.popBox div.bottom > div {
+    font-size: 14px;
+    height: auto;
+  }
+  div.popRec div.popBox div.bottom > div > div {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  div.popRec div.popBox div.bottom > div > div * {
+    max-width: 100% !important;
+  }
+  section.about div.wrap {
+    font-size: 16px;
+  }
+  section.contact div.contactBox {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  header.header {
+    padding: 20px 0;
+    z-index: 999;
+  }
+  header.header a.logo img {
+    max-height: 20px;
+    margin: 0 0 0 15px;
+  }
+  header.header a.navbar-toggle {
+    display: block;
+    line-height: normal;
+    font-size: 14px;
+    min-height: 22px;
+    margin: 0 15px 0 0;
+    float: right;
+  }
+  header.header a.navbar-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transform-origin: 1px 1px;
+    -moz-transform-origin: 1px 1px;
+    -ms-transform-origin: 1px 1px;
+    -o-transform-origin: 1px 1px;
+    transform-origin: 1px 1px;
+  }
+  header.header.on a.navbar-toggle span:first-child {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  header.header.on a.navbar-toggle span:last-child {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  header.header.on a.navbar-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  header.header.on {
+    background: #161616;
+    overflow: inherit;
+  }
+  header.header.on nav.nav {
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #161616;
+    padding-bottom: 15px;
+    z-index: 999;
+  }
+  header.header.on nav.nav a {
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    border-bottom: 1px solid #000;
+  }
+  header.header.on nav.nav a.on {
+    background: #29bc6b;
+    color: #fff;
+  }
+  header.header.on nav.nav a.on:after {
+    display: none;
+  }
+  header.header.on nav.nav > div.search {
+    margin-top: 10px;
+  }
+  section.sec_01 {
+    height: auto;
+  }
+  section.sec_01 video {
+    display: none;
+  }
+  section.sec_01 div.cover {
+    display: block;
+  }
+  section.cases {
+    padding-top: 45px;
+  }
+  section.cases > h2 a,
+  section.brand > h2 a,
+  section.about > h2 a,
+  section.rec > h2 a,
+  section.news > h2 a {
+    height: 32px;
+  }
+  section.brand > h3,
+  section.cases > h3,
+  section.news > h3 {
+    margin-top: 30px;
+  }
+  section.brand > h3 a,
+  section.cases > h3 a,
+  section.news > h3 a {
+    font-size: 12px;
+    margin: 0 12px;
+  }
+  section.cases > h3 a {
+    margin: 0;
+  }
+  section.cases > a.more,
+  section.news > a.more,
+  section.about > a.more {
+    font-size: 14px;
+    width: 230px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 40px;
+  }
+  section.about > a.more {
+    max-width: 120px;
+  }
+  section.cases > div.list a span.info em {
+    font-size: 14px;
+  }
+  section.cases > div.list a span.title {
+    font-size: 14px;
+  }
+  section.news > div.list a span.date {
+    width: 48px;
+    height: 48px;
+  }
+  section.news > div.list a span.date b {
+    line-height: 24px;
+  }
+  section.news > div.list a span.wrap span.info {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  section.about {
+    margin-top: 45px;
+  }
+  section.about div.content {
+    margin-top: 20px;
+    line-height: 24px;
+  }
+  section.about div.content > h3 {
+    font-size: 18px;
+    margin: 20px auto;
+  }
+  section.about div.content p {
+    font-size: 14px;
+    color: #eee;
+  }
+  footer.footer {
+    margin-top: 50px;
+  }
+  footer.footer > div.copy div.wrap a.fr {
+    display: none;
+  }
+  section.videoBox {
+    height: auto;
+  }
+  section.videoBox > a.back {
+    right: 1%;
+    top: 1%;
+  }
+  section.videoBox div.wrap div.info {
+    left: 2%;
+    top: 4%;
+    max-width: 95%;
+  }
+  section.videoBox div.wrap div.info h1 {
+    font-size: 18px;
+  }
+  section.videoBox div.wrap div.btnGroup a {
+    width: 22px;
+    height: 22px;
+  }
+  section.videoBox #video div.controlbar {
+    width: 150px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    margin: -30px 0 0;
+  }
+  section.videoBox #video div.fullbtn,
+  section.videoBox #video div.escfull {
+    height: 30px;
+  }
+  section.videoBox #video div.fullbtn canvas,
+  section.videoBox #video div.escfull canvas {
+    height: 30px;
+    margin: 0;
+  }
+  section.videoBox #video div.timetext {
+    height: 30px !important;
+    line-height: 30px !important;
+    font-size: 16px !important;
+  }
+  section.videoBox #video div.timebobg,
+  section.videoBox #video div.timeprogressbg,
+  section.videoBox #video div.ck_timeprogress {
+    height: 30px !important;
+  }
+  section.footer {
+    display: none;
+  }
+  section.newsBox {
+    padding: 50px 20px 30px;
+  }
+  section.newsBox > div.content > div.top h1 {
+    font-size: 20px;
+  }
+  section.newsBox > div.content > div.body {
+    font-size: 14px;
+  }
+  section.newsBox > div.content > div.bottom {
+    margin-top: 30px;
+  }
+  section.newsBox > div.content > div.bottom a {
+    font-size: 14px;
+  }
+  section.newsBox > div.content > div.bottom a:last-child {
+    text-align: left;
+  }
+  section.about div.wrap {
+    font-size: 14px;
+    margin: 40px 15px 50px;
+    padding: 25px 0;
+  }
+  section.contact div.contactBox {
+    padding: 30px 20px;
+  }
+  section.contact div.contactBox h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  section.contact div.contactBox div.info {
+    margin-top: 15px;
+  }
+  section.contact div.contactBox div.info p {
+    font-size: 14px;
+    line-height: 32px;
+  }
+  section.contact div.contactBox div.map {
+    margin-top: 30px;
+    height: 360px;
+  }
+  section.rec div.list {
+    margin-top: 30px;
+  }
+  section.rec div.list ul {
+    height: 42px;
+    line-height: 42px;
+  }
+  section.rec div.list ul li {
+    font-size: 12px;
+  }
+  div.popRec div.popBox {
+    margin: 30px;
+    height: calc(100% - 60px);
+  }
+  div.popRec div.popBox div.top h3 {
+    font-size: 16px;
+  }
+  div.popRec div.popBox div.top p {
+    line-height: 24px;
+  }
+  div.popRec div.popBox div.bottom {
+    margin-top: 10px;
+    padding-top: 10px;
+    height: calc(100% - 83px);
+  }
+  div.popRec div.popBox div.bottom h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  div.popRec div.popBox div.bottom > div > div {
+    font-size: 12px;
+  }
+  div.loading,
+  div.nomore {
+    padding-top: 50px;
+    color: #6e6f72;
+  }
+  section.info {
+    margin: 30px 20px;
+  }
+  section.info div.body {
+    font-size: 14px;
+  }
+  section.newsBox > div.content > div.top h1 {
+    font-size: 16px;
+    max-width: inherit;
+  }
+  section.newsBox > div.content > div.top:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  section.cases > h3 {
+    text-align: center;
+    font-size: 0;
+  }
+  section.cases > h3 a {
+    display: inline-block;
+    margin: 0 5px;
+    float: none;
+    width: auto;
+  }
+}
