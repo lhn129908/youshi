@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const router = require("./router");
 const mongoose = require("mongoose");
-const expressSession = require("express-session");
 const app = express();
 
 
@@ -13,19 +12,6 @@ db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function () {
     console.log("连接成功");
 });
-
-app.use(
-    expressSession({
-        name: "sessionID",
-        secret: "secret",
-        resave: false,
-        rolling: true,
-        saveUninitialized: false,
-        cookie: {
-            maxAge: 1000 * 60 * 3,
-        },
-    })
-);
 
 
 // 为使用bootstrap设置静态资源目录
@@ -48,6 +34,7 @@ app.use(bodyParser.json());
 
 //挂载路由
 app.use("/", router);
+
 
 app.listen(8000, () => {
     console.log("8000端口已启用");

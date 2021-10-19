@@ -1,9 +1,17 @@
 const express = require("express");
+const Home=require("../models/shou")
 const router = express.Router();
 
 // 来到首页
-router.get("/", (req, res) => {
-    res.render("index.html");
+router.get("/", (req, res,next) => {
+    
+    Home.find(function(err,datas){
+        if(err){
+            next(err);
+            return;
+        }
+        res.render("index.html",{homelist:datas})
+    })
     console.log("欢迎来到首页！！！")
 });
 
