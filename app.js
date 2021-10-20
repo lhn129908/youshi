@@ -15,15 +15,15 @@ db.once("open", function () {
 
 
 // 为使用bootstrap设置静态资源目录
-app.use("/node_modules",express.static("./node_modules"))
+app.use("/node_modules", express.static("./node_modules"))
 // 设置静态资源目录
-app.use("/public",express.static("./public"))
+app.use("/public", express.static("./public"))
 
 // 配置art-template
 // 引用art-template包用来渲染HTML文件
-app.engine("html",require("express-art-template"));
+app.engine("html", require("express-art-template"));
 // 
-app.set("views",__dirname + "/views");
+app.set("views", __dirname + "/views");
 
 // 挂载中间件
 //解析请求头为"application/x-www-form-urlencoded"的post请求参数
@@ -38,5 +38,4 @@ app.use("/", router);
 
 app.listen(8000, () => {
     console.log("8000端口已启用");
-  });
-  
+});
