@@ -2,30 +2,16 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const router = require("./router");
 const mongoose = require("mongoose");
-const expressSession = require("express-session");
 const app = express();
 
 
 
-mongoose.connect("mongodb://localhost:27017");
+mongoose.connect("mongodb://localhost:27017/youshi");
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", function () {
     console.log("连接成功");
 });
-
-app.use(
-    expressSession({
-        name: "sessionID",
-        secret: "secret",
-        resave: false,
-        rolling: true,
-        saveUninitialized: false,
-        cookie: {
-            maxAge: 1000 * 60 * 3,
-        },
-    })
-);
 
 
 // 为使用bootstrap设置静态资源目录
@@ -49,6 +35,7 @@ app.use(bodyParser.json());
 //挂载路由
 app.use("/", router);
 
+<<<<<<< HEAD
 // app.get('/lian_xi',(req,res)=>{
 // 	res.render('lian_xi.html')
 // })
@@ -58,6 +45,8 @@ app.use("/", router);
 // app.get('/zhaop_in',(req,res)=>{
 // 	res.render('zhao_pin.html')
 // })
+=======
+>>>>>>> dfce50b81e34257d32d5b7c15c7870543167e2f6
 
 app.listen(8000, () => {
     console.log("8000端口已启用");
