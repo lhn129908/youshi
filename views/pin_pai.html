@@ -4,140 +4,127 @@
 {{block 'title'}}
 <title>郑州广告片制作-抖音短视频-宣传片拍摄-郑州影视公司「优柿传媒」</title>
 {{/block}}
+<!--引入框架-->
+    <!--引入品牌案列样式-->>
 
+ {{block 'style'}}     
+ <link rel="stylesheet" href="../../public/css/common.css">
+ <link rel="stylesheet" href="../../public/css/layui.css">
+ <link rel="stylesheet" href="../../public/css/brand.css">
+ <link rel="stylesheet" href="../../public/css/respond.css">
+ <link rel="stylesheet" href="../public/css/owl.carousel.min.css">
 
- {{block 'style'}} {{/block}}
+ <style>
+
+ </style>
+ {{/block}}
 
  {{block 'content'}} 
+ [  
+  <!-- {
+    _id: new ObjectId("616e6758951b364a04e20aed"),
+    name: '正弘物业',
+    picture: '../public/img/zh2.png',
+    wenzi: '河南正弘物业管理有限公司成立于2002年9月，注册资本550万元，国家一级资质、中国物业管理综合实力百强企业、郑州市物业服 
+务品牌'
+  },
+  {
+    _id: new ObjectId("616e6758951b364a04e20aee"),
+    name: '吊儿郎当',
+    picture: '../public/img/drld2.png',
+    wenzi: '优柿传媒：“吊儿郎当酒”视频广告'
+  },
+  {
+    _id: new ObjectId("616e6758951b364a04e20aef"),
+    name: '粮之春',
+    picture: '../public/img/lzc2.png',
+    wenzi: '优柿传媒：“粮之春酒业”视频广告'
+  },
+  {
+    _id: new ObjectId("616e6758951b364a04e20af0"),
+    name: '天杞园',
+    picture: '../public/img/tqy2.png',
+    wenzi: '优柿传媒：“天杞园’24k欣杞粉”视频广告'
+  },
+  {
+    _id: new ObjectId("616e6758951b364a04e20af1"),
+    name: '同碗福',
+    picture: '../public/img/hjm2.png',
+    wenzi: '优柿传媒：“同碗福’火鸡面”视频广告'
+  },
+  {
+    _id: new ObjectId("616e6758951b364a04e20af2"),
+    name: '云小白',
+    picture: '../public/img/yxb2.png',
+    wenzi: '优柿传媒：“云小白”视频广告'
+  }
+] -->
  <div class="tab-pane" id="pin_pai">
-    <section class="sub_banner"><img src="../品牌/images/89dac7af963b5035c649c99a95670469.jpg" /></section>
+    <section class="sub_banner"><img src="../public/img/pgy.jpg" /></section>
 
     <section class="brand">
-      <h2><a href="../品牌/2.html"></a></h2>
+      <h2><a href="pin_pai"></a></h2>
       <h3>
-        <a href="../品牌/2.html" data-tid='2'>全部作品</a> <a href="12.html" data-tid="12">品牌传播</a>
+        <a href="pin_pai"  data-tid="2">全部作品</a> <a href="pin_pai"data-tid="12" >品牌传播</a>
       </h3>
       <div class="list clearfix">
         <div class="owl_case owl-carousel clearfix">
           <div class="item layui-row layui-col-space22 clearfix" id="items_2">
-            <a href="../品牌/98.html" target="_blank" title="正弘物业" class="layui-col-xs6 layui-col-sm4">
+            {{each Pinpai}}
+            <a href="/topic/{{$value._id.toString()}}" target="_blank" title="{{$value.name}}" class="layui-col-xs6 layui-col-sm4">
               <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/1aeb2acca01afbbf7c10b409593570e1.png" alt="正弘物业">
+                <img class="owl-lazy"  data-src="{{$value.picture}}" alt="{{$value.name}}">
                 <span class="info">
-                  <span class="title">正弘物业</span>
-                  <span class="desc">河南正弘物业管理有限公司成立于2002年9月，注册资本550万元，国家一级资质、中国物业管理综合实力百强企业、郑州市物业服务品牌</span>
+                  <span class="title">{{$value.name}}</span>
+                  <span class="desc">{{$value.wenzi}}</span>
                 </span>
               </span>
             </a>
-            <a href="../品牌/45.html" target="_blank" title="吊儿郎当" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/5f3732c0c6bc36ccf4b15ede8d575fc9.png" alt="吊儿郎当">
-                <span class="info">
-                  <span class="title">吊儿郎当</span>
-                  <span class="desc">优柿传媒：“吊儿郎当酒”视频广告</span>
-                </span>
-              </span>
-            </a>
-            <a href="../品牌/23.html" target="_blank" title="粮之春" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/54cdbc1233f648b996cc48bf5c331a03.png" alt="粮之春">
-                <span class="info">
-                  <span class="title">粮之春</span>
-                  <span class="desc">优柿传媒：“粮之春酒业”视频广告</span>
-                </span>
-              </span>
-            </a>
-            <a href="../品牌/22.html" target="_blank" title="天杞园" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/499d427d97fbd8caa1fd706066c1cf83.png" alt="天杞园">
-                <span class="info">
-                  <span class="title">天杞园</span>
-                  <span class="desc">优柿传媒：“‘天杞园’24k欣杞粉”视频广告</span>
-                </span>
-              </span>
-            </a>
-            <a href="../品牌/21.html" target="_blank" title="同碗福" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/f052b2a9aaf102badeeca70455fa8d9e.png" alt="同碗福">
-                <span class="info">
-                  <span class="title">同碗福</span>
-                  <span class="desc">优柿传媒：“‘同碗福’火鸡面”视频广告</span>
-                </span>
-              </span>
-            </a>
-            <a href="../品牌/20.html" target="_blank" title="云小白" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/4776c5cf8875c439b6fc0e4a61eb2532.png" alt="云小白">
-                <span class="info">
-                  <span class="title">云小白</span>
-                  <span class="desc">优柿传媒：“云小白”视频广告</span>
-                </span>
-              </span>
-            </a>
+            {{/each}}
           </div>
           <div class="item layui-row layui-col-space22 clearfix" id="items_12">
-            <a href="../品牌/98.html" target="_blank" title="正弘物业" class="layui-col-xs6 layui-col-sm4">
+            {{each Pinpai}}
+            <a href="/topic/{{$value._id.toString()}}" target="_blank" title="{{$value.name}}" class="layui-col-xs6 layui-col-sm4">
               <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/1aeb2acca01afbbf7c10b409593570e1.png" alt="正弘物业">
+                <img class="owl-lazy"  data-src="{{$value.picture}}" alt="{{$value.name}}">
                 <span class="info">
-                  <span class="title">正弘物业</span>
-                  <span class="desc">河南正弘物业管理有限公司成立于2002年9月，注册资本550万元，国家一级资质、中国物业管理综合实力百强企业、郑州市物业服务品牌</span>
+                  <span class="title">{{$value.name}}</span>
+                  <span class="desc">{{$value.wenzi}}</span>
                 </span>
               </span>
             </a>
-            <a href="../品牌/45.html" target="_blank" title="吊儿郎当" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/5f3732c0c6bc36ccf4b15ede8d575fc9.png" alt="吊儿郎当">
-                <span class="info">
-                  <span class="title">吊儿郎当</span>
-                  <span class="desc">优柿传媒：“吊儿郎当酒”视频广告</span>
-                </span>
-              </span>
-            </a>
-            <a href="../品牌/23.html" target="_blank" title="粮之春" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/54cdbc1233f648b996cc48bf5c331a03.png" alt="粮之春">
-                <span class="info">
-                  <span class="title">粮之春</span>
-                  <span class="desc">优柿传媒：“粮之春酒业”视频广告</span>
-                </span>
-              </span>
-            </a>
-            <a href="../品牌/22.html" target="_blank" title="天杞园" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/499d427d97fbd8caa1fd706066c1cf83.png" alt="天杞园">
-                <span class="info">
-                  <span class="title">天杞园</span>
-                  <span class="desc">优柿传媒：“‘天杞园’24k欣杞粉”视频广告</span>
-                </span>
-              </span>
-            </a>
-            <a href="../品牌/21.html" target="_blank" title="同碗福" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/f052b2a9aaf102badeeca70455fa8d9e.png" alt="同碗福">
-                <span class="info">
-                  <span class="title">同碗福</span>
-                  <span class="desc">优柿传媒：“‘同碗福’火鸡面”视频广告</span>
-                </span>
-              </span>
-            </a>
-            <a href="../品牌/20.html" target="_blank" title="云小白" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy" data-src="../品牌/images/4776c5cf8875c439b6fc0e4a61eb2532.png" alt="云小白">
-                <span class="info">
-                  <span class="title">云小白</span>
-                  <span class="desc">优柿传媒：“云小白”视频广告</span>
-                </span>
-              </span>
-            </a>
+            {{/each}}
           </div>
         </div>
-      </div>
       <div class="loading"><span></span><span></span><span></span><span></span><span></span><span></span></div>
     </section>
   </div>
 
  {{/block}}
+ {{block 'script'}} 
+ <script src="../public/js/jquery-1.9.1.min.js"></script>
+ <script src="../public/js/owl.carousel.min.js"></script>
+ <script>
+   $(function ($) {
+     var owl_case = $('.owl_case');
+     owl_case.owlCarousel({
+       items: 1,
+       dots: false,
+       autoHeight: true,
+       lazyLoad: true,
+       animateOut: 'fadeOut',
+       pullDrag: false,
+       onChanged: function (e) {
+         $('section.brand > h3 a:eq(' + parseInt(e.item.index) + ')').addClass('on').siblings('a').removeClass('on');
+       },
+     });
+     $('section.brand > h3 a').click(function (event) {
+       owl_case.trigger('to.owl.carousel', [$(this).index(), 300]);
+       return false;
+     });
 
+   })
+   </script>
+ {{/block}}
 
- {{block 'script'}} {{/block}}
+ </html>

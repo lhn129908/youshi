@@ -1,0 +1,68 @@
+{{extend '../_layouts/layout.html'}}
+{{block 'title'}} 
+<title>{{pinpai.title}}</title>
+{{/block}}
+{{block 'style'}}
+<link rel="stylesheet" href="../../public/css/common.css">
+<link rel="stylesheet" href="../../public/css/layui.css">
+<link rel="stylesheet" href="../../public/css/brand.css">
+<link rel="stylesheet" href="../../public/css/respond.css">
+<link rel="stylesheet" href="../../public/css/news.css">
+{{/block}}
+{{block 'content'}}
+<section class="sub_banner article_banner"
+		style="background-image: url('{{pinpai.picture2}}');"></section>
+	<section class="newsBox brandBox">
+		<div class="content">
+			<div class="top">
+				<h1>{{pinpai.name}}</h1>
+				<p>{{pinpai.data}}</p>
+			</div>
+			<div class="body clearfix p-rel cut">
+				<p style="text-align:center"><img src="{{pinpai.picturebg}}"
+						title="{{pinpai.name}}" alt="{{pinpai.name}}" /></p>
+				<p style="text-align: justify;">
+					{{pinpai.jieshao}}
+				</p>
+			</div>
+			<div class="tags">
+				TAG：
+				<a href="" target='_blank' title="{{pinpai.tag1}}">{{pinpai.tag1}}</a>
+				<a href="" target='_blank' title="{{pinpai.tag2}}">{{pinpai.tag2}}</a>
+				<a href="" target='_blank' title="{{pinpai.tag3}}">{{pinpai.tag3}}</a>
+				<a href="" target='_blank'
+					title="{{pinpai.tag4}}">{{pinpai.tag4}}</a>
+				<a href="" target='_blank' title="{{pinpai.tag5}}">{{pinpai.tag5}}</a>
+				<a href="" target='_blank' title="{{pinpai.tag6}}">{{pinpai.tag6}}</a>
+				<a href="" target='_blank'
+					title="{{pinpai.tag7}}">{{pinpai.tag7}}</a>
+				<a href="" target='_blank'
+					title="{{pinpai.tag8}}">{{pinpai.tag8}}</a>
+				<a href="" target='_blank' title="{{pinpai.tag9}}">{{pinpai.tag9}}</a>
+				<a href="" target='_blank'
+					title="{{pinpai.tag10}}">{{pinpai.tag10}}</a>
+			</div>
+
+			<div class="others">
+				<h3>其他达人</h3>
+				<div class="layui-row layui-col-space22 clearfix">
+					{{each hub}}
+					<a href="/topic/{{$value._id.toString()}}" target="_blank" title="{{$value.name}}" class="layui-col-xs6 layui-col-sm3">
+						<span class="thumb">
+							<img src="{{$value.picture}}" alt="{{$value.name}}">
+							<span class="info">
+								<span class="title">{{$value.name}}</span>
+								<span class="desc">{{$value.wenzi}}</span>
+							</span>
+						</span>
+					</a>
+					{{/each}}
+				</div>
+			</div>
+
+		</div>
+	</section>
+	{{/block}}
+	{{block 'script'}}
+	
+	{{/block}}
