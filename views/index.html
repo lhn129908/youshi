@@ -6,14 +6,21 @@
 {{/block}}
 
 
-{{block 'style'}} {{/block}}
+{{block 'style'}}
+  <style>
+    .a>a{
+    color:#29bc6b !important;
+    border-bottom:2px solid #29bc6b !important;
+  }
+  </style>
+{{/block}}
 
 {{block 'content'}}
 <div class="tab-pane active" id="home">
 
   <!-- 顶部视频 -->
   <div class="top-mp4">
-    <video src="../public/video/video_bg.mp4" autoplay="autoplay" loop="loop"></video>
+    <video src="../public/video/video_bg.mp4 " autoplay="autoplay" loop="loop"></video>
   </div>
 
   <!-- 精品案例 -->
@@ -23,19 +30,18 @@
     </div>
     <div class="jing_pin_content">
       <ul class="nav nav-pills">
-        <li role="presentation"><a href="#quan_bu" data-toggle="tab">全部作品</a></li>
+        <li role="presentation" class="active"><a href="#quan_bu" data-toggle="tab">全部作品</a></li>
         <li role="presentation"><a href="#wei_dian_ying" data-toggle="tab">微电影</a></li>
         <li role="presentation"><a href="#xing_xiang" data-toggle="tab">形象片</a></li>
         <li role="presentation"><a href="#xuan_chuan" data-toggle="tab">宣传片</a></li>
         <li role="presentation"><a href="#TVC" data-toggle="tab">TVC</a></li>
         <li role="presentation"><a href="#dian_shi" data-toggle="tab">电视购物</a></li>
       </ul>
-
       <div class="tab-content">
         <!-- 全部作品 -->
         <div class="tab-pane fade active in" id="quan_bu">
           <ul>
-            {{each homelist}}
+            {{each quan}}
             <li>
               <span>
                 <p class="zhe">
@@ -45,211 +51,101 @@
                 <video src="{{$value.video}}" muted="muted" class="video"></video>
               </span>
             </li>
-          {{/each}}
+            {{/each}}
           </ul>
-
-          <!-- <ul>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-            </ul> -->
         </div>
 
 
         <!-- 微电影 -->
-        <!-- <div class="tab-pane fade" id="wei_dian_ying">
-            <ul>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-            </ul>
-          </div> -->
+        <div class="tab-pane fade" id="wei_dian_ying">
+          <ul>
+            {{each wei}}
+            <li>
+              <span>
+                <p class="zhe">
+                  <b>{{$value.title}}</b>
+                  <span>{{$value.address}}</span>
+                </p>
+                <video src="{{$value.video}}" muted="muted" class="video"></video>
+              </span>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
 
 
         <!-- 形象片 -->
-        <!-- <div class="tab-pane fade" id="xing_xiang">
-            <ul>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-            </ul>
-          </div> -->
+        <div class="tab-pane fade" id="xing_xiang">
+          <ul>
+            {{each xing}}
+            <li>
+              <span>
+                <p class="zhe">
+                  <b>{{$value.title}}</b>
+                  <span>{{$value.address}}</span>
+                </p>
+                <video src="{{$value.video}}" muted="muted" class="video"></video>
+              </span>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
 
 
 
         <!-- 宣传片 -->
-        <!-- <div class="tab-pane fade" id="xuan_chuan">
-            <ul>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-            </ul>
-          </div> -->
+        <div class="tab-pane fade" id="xuan_chuan">
+          <ul>
+            {{each xuan}}
+            <li>
+              <span>
+                <p class="zhe">
+                  <b>{{$value.title}}</b>
+                  <span>{{$value.address}}</span>
+                </p>
+                <video src="{{$value.video}}" muted="muted" class="video"></video>
+              </span>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
 
 
 
         <!--TVC -->
-        <!-- <div class="tab-pane fade" id="TVC">
-            <ul>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-            </ul>
-          </div> -->
+        <div class="tab-pane fade" id="TVC">
+          <ul>
+            {{each TVC}}
+            <li>
+              <span>
+                <p class="zhe">
+                  <b>{{$value.title}}</b>
+                  <span>{{$value.address}}</span>
+                </p>
+                <video src="{{$value.video}}" muted="muted" class="video"></video>
+              </span>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
 
 
         <!-- 电视购物 -->
-        <!-- <div class="tab-pane fade" id="dian_shi">
-            <ul>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <p class="zhe">
-                    <b>佳龙造</b>
-                    <span>郑州|0'11"</span>
-                  </p>
-                  <video src="../public/video/jialong.mp4" muted="muted" class="video"></video>
-                </span>
-              </li>
-            </ul>
-          </div> -->
+        <div class="tab-pane fade" id="dian_shi">
+          <ul>
+            {{each dian}}
+            <li>
+              <span>
+                <p class="zhe">
+                  <b>{{$value.title}}</b>
+                  <span>{{$value.address}}</span>
+                </p>
+                <video src="{{$value.video}}" muted="muted" class="video"></video>
+              </span>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
 
       </div>
     </div>
@@ -378,4 +274,7 @@
 {{/block}}
 
 
-{{block 'script'}} {{/block}}
+{{block 'script'}} 
+       <!-- 引入bootstrap -->
+       <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+{{/block}}

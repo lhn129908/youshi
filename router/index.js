@@ -3,17 +3,37 @@ const Home=require("../models/shou")
 const router = express.Router();
 
 // 来到首页
-router.get("/", (req, res,next) => {
+router.get("/", async(req, res) => {
     
-    Home.find(function(err,datas){
-        if(err){
-            next(err);
-            return;
-        }
-        res.render("index.html",{homelist:datas})
-    })
+    var quan=await Home.find();
+    // console.log(quan);
+
+    var wei=await Home.find({lei:"wei"});
+    // console.log(wei);
+
+    var xing=await Home.find({lei:"xing"});
+    // console.log(xing);
+
+    var TVC=await Home.find({lei:"TVC"});
+    // console.log(TVC);
+
+    var xuan=await Home.find({lei:"xuan"});
+    // console.log(xuan);
+
+    var dian=await Home.find({lei:"dian"});
+    // console.log(dian);
+
+    res.render("index.html",{quan,wei,xing,TVC,xuan,dian});
     console.log("欢迎来到首页！！！")
 });
+
+
+
+
+
+
+
+
 
 // 来到拍摄案例
 router.get("/an_li", (req, res) => {
