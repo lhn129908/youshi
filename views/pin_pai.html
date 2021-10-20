@@ -12,6 +12,7 @@
  <link rel="stylesheet" href="../../public/css/layui.css">
  <link rel="stylesheet" href="../../public/css/brand.css">
  <link rel="stylesheet" href="../../public/css/respond.css">
+ <link rel="stylesheet" href="../public/css/owl.carousel.min.css">
 
  <style>
 
@@ -72,7 +73,20 @@
             {{each Pinpai}}
             <a href="/topic/{{$value._id.toString()}}" target="_blank" title="{{$value.name}}" class="layui-col-xs6 layui-col-sm4">
               <span class="thumb">
-                <img class="owl-lazy" src="{{$value.picture}}" alt="{{$value.name}}">
+                <img class="owl-lazy"  data-src="{{$value.picture}}" alt="{{$value.name}}">
+                <span class="info">
+                  <span class="title">{{$value.name}}</span>
+                  <span class="desc">{{$value.wenzi}}</span>
+                </span>
+              </span>
+            </a>
+            {{/each}}
+          </div>
+          <div class="item layui-row layui-col-space22 clearfix" id="items_12">
+            {{each Pinpai}}
+            <a href="/topic/{{$value._id.toString()}}" target="_blank" title="{{$value.name}}" class="layui-col-xs6 layui-col-sm4">
+              <span class="thumb">
+                <img class="owl-lazy"  data-src="{{$value.picture}}" alt="{{$value.name}}">
                 <span class="info">
                   <span class="title">{{$value.name}}</span>
                   <span class="desc">{{$value.wenzi}}</span>
@@ -88,8 +102,29 @@
 
  {{/block}}
  {{block 'script'}} 
+ <script src="../public/js/jquery-1.9.1.min.js"></script>
+ <script src="../public/js/owl.carousel.min.js"></script>
+ <script>
+   $(function ($) {
+     var owl_case = $('.owl_case');
+     owl_case.owlCarousel({
+       items: 1,
+       dots: false,
+       autoHeight: true,
+       lazyLoad: true,
+       animateOut: 'fadeOut',
+       pullDrag: false,
+       onChanged: function (e) {
+         $('section.brand > h3 a:eq(' + parseInt(e.item.index) + ')').addClass('on').siblings('a').removeClass('on');
+       },
+     });
+     $('section.brand > h3 a').click(function (event) {
+       owl_case.trigger('to.owl.carousel', [$(this).index(), 300]);
+       return false;
+     });
 
-</script>
+   })
+   </script>
  {{/block}}
 
  </html>
