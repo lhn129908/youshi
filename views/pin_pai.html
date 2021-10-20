@@ -1,27 +1,32 @@
-{{extend './_layouts/layout.html'}} 
+{{extend './_layouts/layout.html'}}
 
 
 {{block 'title'}}
 <title>郑州广告片制作-抖音短视频-宣传片拍摄-郑州影视公司「优柿传媒」</title>
 {{/block}}
 <!--引入框架-->
-    <!--引入品牌案列样式-->>
+<!--引入品牌案列样式-->>
 
- {{block 'style'}}     
- <link rel="stylesheet" href="../../public/css/common.css">
- <link rel="stylesheet" href="../../public/css/layui.css">
- <link rel="stylesheet" href="../../public/css/brand.css">
- <link rel="stylesheet" href="../../public/css/respond.css">
- <link rel="stylesheet" href="../public/css/owl.carousel.min.css">
+{{block 'style'}}
+<link rel="stylesheet" href="../../public/css/common.css">
+<link rel="stylesheet" href="../../public/css/layui.css">
+<link rel="stylesheet" href="../../public/css/brand.css">
+<link rel="stylesheet" href="../../public/css/respond.css">
+<link rel="stylesheet" href="../public/css/owl.carousel.min.css">
 
- <style>
 
- </style>
- {{/block}}
+<style>
+  .c>a {
+    color: #29bc6b !important;
+    border-bottom: 2px solid #29bc6b !important;
+  }
+</style>
 
- {{block 'content'}} 
- [  
-  <!-- {
+{{/block}}
+
+{{block 'content'}}
+[
+<!-- {
     _id: new ObjectId("616e6758951b364a04e20aed"),
     name: '正弘物业',
     picture: '../public/img/zh2.png',
@@ -59,72 +64,74 @@
     wenzi: '优柿传媒：“云小白”视频广告'
   }
 ] -->
- <div class="tab-pane" id="pin_pai">
-    <section class="sub_banner"><img src="../public/img/pgy.jpg" /></section>
+<div class="tab-pane" id="pin_pai">
+  <section class="sub_banner"><img src="../public/img/pgy.jpg" /></section>
 
-    <section class="brand">
-      <h2><a href="pin_pai"></a></h2>
-      <h3>
-        <a href="pin_pai"  data-tid="2">全部作品</a> <a href="pin_pai"data-tid="12" >品牌传播</a>
-      </h3>
-      <div class="list clearfix">
-        <div class="owl_case owl-carousel clearfix">
-          <div class="item layui-row layui-col-space22 clearfix" id="items_2">
-            {{each Pinpai}}
-            <a href="/topic/{{$value._id.toString()}}" target="_blank" title="{{$value.name}}" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy"  data-src="{{$value.picture}}" alt="{{$value.name}}">
-                <span class="info">
-                  <span class="title">{{$value.name}}</span>
-                  <span class="desc">{{$value.wenzi}}</span>
-                </span>
+  <section class="brand">
+    <h2><a href="pin_pai"></a></h2>
+    <h3>
+      <a href="pin_pai" data-tid="2">全部作品</a> <a href="pin_pai" data-tid="12">品牌传播</a>
+    </h3>
+    <div class="list clearfix">
+      <div class="owl_case owl-carousel clearfix">
+        <div class="item layui-row layui-col-space22 clearfix" id="items_2">
+          {{each Pinpai}}
+          <a href="/topic/{{$value._id.toString()}}" target="_blank" title="{{$value.name}}"
+            class="layui-col-xs6 layui-col-sm4">
+            <span class="thumb">
+              <img class="owl-lazy" data-src="{{$value.picture}}" alt="{{$value.name}}">
+              <span class="info">
+                <span class="title">{{$value.name}}</span>
+                <span class="desc">{{$value.wenzi}}</span>
               </span>
-            </a>
-            {{/each}}
-          </div>
-          <div class="item layui-row layui-col-space22 clearfix" id="items_12">
-            {{each Pinpai}}
-            <a href="/topic/{{$value._id.toString()}}" target="_blank" title="{{$value.name}}" class="layui-col-xs6 layui-col-sm4">
-              <span class="thumb">
-                <img class="owl-lazy"  data-src="{{$value.picture}}" alt="{{$value.name}}">
-                <span class="info">
-                  <span class="title">{{$value.name}}</span>
-                  <span class="desc">{{$value.wenzi}}</span>
-                </span>
-              </span>
-            </a>
-            {{/each}}
-          </div>
+            </span>
+          </a>
+          {{/each}}
         </div>
+        <div class="item layui-row layui-col-space22 clearfix" id="items_12">
+          {{each Pinpai}}
+          <a href="/topic/{{$value._id.toString()}}" target="_blank" title="{{$value.name}}"
+            class="layui-col-xs6 layui-col-sm4">
+            <span class="thumb">
+              <img class="owl-lazy" data-src="{{$value.picture}}" alt="{{$value.name}}">
+              <span class="info">
+                <span class="title">{{$value.name}}</span>
+                <span class="desc">{{$value.wenzi}}</span>
+              </span>
+            </span>
+          </a>
+          {{/each}}
+        </div>
+      </div>
       <div class="loading"><span></span><span></span><span></span><span></span><span></span><span></span></div>
-    </section>
-  </div>
+  </section>
+</div>
 
- {{/block}}
- {{block 'script'}} 
- <script src="../public/js/jquery-1.9.1.min.js"></script>
- <script src="../public/js/owl.carousel.min.js"></script>
- <script>
-   $(function ($) {
-     var owl_case = $('.owl_case');
-     owl_case.owlCarousel({
-       items: 1,
-       dots: false,
-       autoHeight: true,
-       lazyLoad: true,
-       animateOut: 'fadeOut',
-       pullDrag: false,
-       onChanged: function (e) {
-         $('section.brand > h3 a:eq(' + parseInt(e.item.index) + ')').addClass('on').siblings('a').removeClass('on');
-       },
-     });
-     $('section.brand > h3 a').click(function (event) {
-       owl_case.trigger('to.owl.carousel', [$(this).index(), 300]);
-       return false;
-     });
+{{/block}}
+{{block 'script'}}
+<script src="../public/js/jquery-1.9.1.min.js"></script>
+<script src="../public/js/owl.carousel.min.js"></script>
+<script>
+  $(function ($) {
+    var owl_case = $('.owl_case');
+    owl_case.owlCarousel({
+      items: 1,
+      dots: false,
+      autoHeight: true,
+      lazyLoad: true,
+      animateOut: 'fadeOut',
+      pullDrag: false,
+      onChanged: function (e) {
+        $('section.brand > h3 a:eq(' + parseInt(e.item.index) + ')').addClass('on').siblings('a').removeClass('on');
+      },
+    });
+    $('section.brand > h3 a').click(function (event) {
+      owl_case.trigger('to.owl.carousel', [$(this).index(), 300]);
+      return false;
+    });
 
-   })
-   </script>
- {{/block}}
+  })
+</script>
+{{/block}}
 
- </html>
+</html>

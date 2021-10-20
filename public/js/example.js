@@ -1,4 +1,16 @@
 $(function () {
+  var d = 0;
+  var a = 0;
+  var b = $(".container").children();
+  for (var i = 0; i < b.length; i++) {
+    $(b[i]).click(function () {
+      //  index = 0;
+      var c = $(this)[0];
+      a = c.getAttribute("value");
+      // index = index+a;
+    });
+  }
+
   // 小视频静音
   $(".media video").prop("muted", true);
 
@@ -7,6 +19,8 @@ $(function () {
     // 鼠标移入小视频事件
     mouseenter: function () {
       let index = $(this).index();
+      index = index + Number(a);
+      console.log(index);
       // 底部文字显示
       $(".popup").eq(index).removeClass("el-not-show");
       // 小视频的遮罩层隐藏
@@ -20,7 +34,7 @@ $(function () {
     // 鼠标移出小视频事件
     mouseleave: function () {
       let index = $(this).index();
-      // 底部文字隐藏
+      index = index + Number(a);
       $(".popup").eq(index).addClass("el-not-show");
       // 小视频遮罩层显示
       $(".masking").eq(index).removeClass("el-not-show");
@@ -197,7 +211,6 @@ function unScroll() {
 function removeUnScroll() {
   $(document).unbind("scroll.unable");
 }
-
 
 // 以下是懒加载
 // 判断元素是否出现在可视范围内

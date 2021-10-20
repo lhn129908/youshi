@@ -1,6 +1,9 @@
+// 引入
 const express = require("express");
 const Home=require("../models/shou")
 const router = express.Router();
+// 引用数据库模型
+const user = require("../models/dou_ting_ting")
 
 //链接“动态”数据库
 const User = require("../models/student");
@@ -34,9 +37,23 @@ router.get("/", async(req, res) => {
 });
 
 // 来到拍摄案例
-router.get("/an_li", (req, res) => {
-    res.render("an_li.html");
-    console.log("欢迎来到拍摄案例！！！")
+router.get("/an_li", async(req, res) => {
+    var  quan1 = await user.find();
+    var  wei1 = await user.find({kind:"微电影"});
+    var  xing1 = await user.find({kind:"形象片"});
+    var  TVC1 = await user.find({kind:"TVC"});
+    var  xuan1 = await user.find({kind:"宣传片"});
+    var  dian1 = await user.find({kind:"电视购物"});
+    var a = quan1.length;
+    var b = wei1.length+a;
+    var c = xing1.length+b;
+    var d = TVC1.length+c;
+    var e = xuan1.length+d;
+    var f = 0;
+    var g = {
+        a:a,b:b,c:c,d:d,e:e,f:f
+    }
+res.render("an_li.html",{quan1,wei1,xing1,TVC1,xuan1,dian1,g}) 
 });
 
 // 来到品牌传播

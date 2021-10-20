@@ -1,9 +1,9 @@
 // 秒转换为分钟00:00格式
 function timeToMinute(times) {
-  var t;
+  let t;
   if (times > -1) {
-    var min = Math.floor(times / 60) % 60;
-    var sec = times % 60;
+    let min = Math.floor(times / 60) % 60;
+    let sec = times % 60;
     if (min < 10) {
       t = "0" + min + ":";
     } else {
