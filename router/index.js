@@ -1,6 +1,7 @@
 // 引入
 const express = require("express");
 const Home=require("../models/shou")
+const Dong=require("../models/shou1")
 const router = express.Router();
 // 引用数据库模型
 const user = require("../models/dou_ting_ting")
@@ -32,11 +33,11 @@ router.get("/", async(req, res) => {
     var dian=await Home.find({lei:"dian"});
     // console.log(dian);
 
-    // var news=await Home.find({lei:"news"});
+    var news=await Dong.find({lei:"news"});
 
-    // var hang=await Home.find({lei:"hang"});
+    var hang=await Dong.find({lei:"hang"});
 
-    res.render("index.html",{quan,wei,xing,TVC,xuan,dian});
+    res.render("index.html",{quan,wei,xing,TVC,xuan,dian,news,hang});
     console.log("欢迎来到首页！！！")
 });
 

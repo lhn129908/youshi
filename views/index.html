@@ -7,17 +7,18 @@
 
 
 {{block 'style'}}
-  <style>
-    .a>a{
-    color:#29bc6b !important;
-    border-bottom:2px solid #29bc6b !important;
+<style>
+  .a>a {
+    color: #29bc6b !important;
+    border-bottom: 2px solid #29bc6b !important;
   }
-    .aa{
-      background-color: #29bc6b !important;
-    }
-  </style>
-  <!-- 引入首页样式 -->
-  <link rel="stylesheet" href="../../public/css/home.css">
+
+  .aa {
+    background-color: #29bc6b !important;
+  }
+</style>
+<!-- 引入首页样式 -->
+<link rel="stylesheet" href="../../public/css/home.css">
 {{/block}}
 
 {{block 'content'}}
@@ -175,55 +176,65 @@
       <!-- 优柿新闻 -->
       <div class="tab-content  fang_da">
         <div class="tab-pane active fade in" id="news">
-          <!-- <ul>
+          <ul>
             {{each news}}
-              <li>
-                <span>
-                  <h3>{{$value.date}}</h3>
-                  <h5>{{$value.nian}}</h5>
-                </span>
-                <p>{{$value.content}}</p>
-              </li>
+            <li>
+              <span>
+                <h3>{{$value.date}}</h3>
+                <h5>{{$value.nian}}</h5>
+              </span>
+              <p>{{$value.content}}</p>
+            </li>
             {{/each}}
+          </ul>
+          <!-- <ul>
+            <li>
+              <span>
+                <h3>09.30</h3>
+                <h5>2021</h5>
+              </span>
+              <p>学校宣传片拍摄主要有哪些类型？</p>
+            </li>
+            <li>
+              <span>
+                <h3>09.28</h3>
+                <h5>2021</h5>
+              </span>
+              <p> 企业宣传片制作的意义</p>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <span>
+                <h3>09.30</h3>
+                <h5>2021</h5>
+              </span>
+              <p>学校宣传片拍摄主要有哪些类型？</p>
+            </li>
+            <li>
+              <span>
+                <h3>09.28</h3>
+                <h5>2021</h5>
+              </span>
+              <p> 企业宣传片制作的意义</p>
+            </li>
           </ul> -->
-
-          <ul>
-            <li>
-              <span>
-                <h3>09.30</h3>
-                <h5>2021</h5>
-              </span>
-              <p>学校宣传片拍摄主要有哪些类型？</p>
-            </li>
-            <li>
-              <span>
-                <h3>09.28</h3>
-                <h5>2021</h5>
-              </span>
-              <p> 企业宣传片制作的意义</p>
-            </li>
-          </ul>
-
-          <ul>
-            <li>
-              <span>
-                <h3>09.30</h3>
-                <h5>2021</h5>
-              </span>
-              <p>学校宣传片拍摄主要有哪些类型？</p>
-            </li>
-            <li>
-              <span>
-                <h3>09.28</h3>
-                <h5>2021</h5>
-              </span>
-              <p> 企业宣传片制作的意义</p>
-            </li>
-          </ul>
         </div>
         <!-- 行业动态 -->
         <div class="tab-pane fade" id="hang_ye">
           <ul>
+            {{each news}}
+            <li>
+              <span>
+                <h3>{{$value.date}}</h3>
+                <h5>{{$value.nian}}</h5>
+              </span>
+              <p>{{$value.content}}</p>
+            </li>
+            {{/each}}
+          </ul>
+          <!-- <ul>
             <li>
               <span>
                 <h3>09.30</h3>
@@ -255,7 +266,7 @@
               </span>
               <p> 企业宣传片制作的意义</p>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -291,7 +302,7 @@
 {{/block}}
 
 
-{{block 'script'}} 
-       <!-- 引入bootstrap -->
-       <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+{{block 'script'}}
+<!-- 引入bootstrap -->
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 {{/block}}
