@@ -7,12 +7,17 @@
 
 
 {{block 'style'}}
-<style>
-  .a>a {
-    color: #29bc6b !important;
-    border-bottom: 2px solid #29bc6b !important;
+  <style>
+    .a>a{
+    color:#29bc6b !important;
+    border-bottom:2px solid #29bc6b !important;
   }
-</style>
+    .aa{
+      background-color: #29bc6b !important;
+    }
+  </style>
+  <!-- 引入首页样式 -->
+  <link rel="stylesheet" href="../../public/css/home.css">
 {{/block}}
 
 {{block 'content'}}
@@ -26,7 +31,7 @@
   <!-- 精品案例 -->
   <div class="jing_pin">
     <div class="jing_pin_title">
-      <a href=""></a>
+      <a href="an_li"></a>
     </div>
     <div class="jing_pin_content">
       <ul class="nav nav-pills">
@@ -151,7 +156,7 @@
     </div>
     <!-- 更多 -->
     <div class="jing_pin_more">
-      <a href="">查看更多精品案例</a>
+      <a href="an_li">查看更多精品案例</a>
     </div>
   </div>
 
@@ -159,7 +164,7 @@
   <!-- 新闻动态 -->
   <div class="xin_wen">
     <div class="xin_wen_title">
-      <a href=""></a>
+      <a href="dong_tai"></a>
     </div>
     <div class="xin_wen_content">
       <ul class="nav nav-pills">
@@ -170,6 +175,18 @@
       <!-- 优柿新闻 -->
       <div class="tab-content  fang_da">
         <div class="tab-pane active fade in" id="news">
+          <!-- <ul>
+            {{each news}}
+              <li>
+                <span>
+                  <h3>{{$value.date}}</h3>
+                  <h5>{{$value.nian}}</h5>
+                </span>
+                <p>{{$value.content}}</p>
+              </li>
+            {{/each}}
+          </ul> -->
+
           <ul>
             <li>
               <span>
@@ -244,7 +261,7 @@
     </div>
     <!-- 更多 -->
     <div class="xin_wen_more">
-      <a href="">查看更多新闻动态</a>
+      <a href="dong_tai">查看更多新闻动态</a>
     </div>
   </div>
 
@@ -252,7 +269,7 @@
   <!-- 关于我们 -->
   <div class="guan_yu">
     <div class="guan_yu_title">
-      <a href=""></a>
+      <a href="wo_men"></a>
     </div>
     <div class="guan_yu_content">
       <img src="../public/img/about.jpg" alt="">
@@ -267,14 +284,14 @@
       </div>
     </div>
     <div class="guan_yu_more">
-      <a href="">查看更多</a>
+      <a href="wo_men">查看更多</a>
     </div>
   </div>
 </div>
 {{/block}}
 
 
-{{block 'script'}}
-<!-- 引入bootstrap -->
-<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+{{block 'script'}} 
+       <!-- 引入bootstrap -->
+       <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 {{/block}}

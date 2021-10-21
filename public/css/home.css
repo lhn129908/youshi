@@ -361,12 +361,13 @@
   #home #xuan_chuan ul li > span > p b,
   #home #TVC ul li > span > p b,
   #home #dian_shi ul li > span > p b {
-    display: block;
-    width: 30%;
-    margin-left: 35%;
+    display: inline-block;
+    width: 50%;
+    margin-left: 21%;
     margin-top: 20%;
     font-size: 30px;
     font-weight: 400;
+    text-align: center;
   }
   #home #quan_bu ul li > span > p span,
   #home #wei_dian_ying ul li > span > p span,
@@ -940,12 +941,13 @@
   #home #xuan_chuan ul li > span > p b,
   #home #TVC ul li > span > p b,
   #home #dian_shi ul li > span > p b {
-    display: block;
-    width: 30%;
-    margin-left: 35%;
+    display: inline-block;
+    width: 50%;
+    margin-left: 22%;
     margin-top: 20%;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
+    text-align: center;
   }
   #home #quan_bu ul li > span > p span,
   #home #wei_dian_ying ul li > span > p span,
@@ -1560,12 +1562,13 @@
   #home #xuan_chuan ul li > span > p b,
   #home #TVC ul li > span > p b,
   #home #dian_shi ul li > span > p b {
-    display: block;
-    width: 30%;
-    margin-left: 35%;
+    display: inline-block;
+    width: 60%;
+    margin-left: 19%;
     margin-top: 20%;
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
   }
   #home #quan_bu ul li > span > p span,
   #home #wei_dian_ying ul li > span > p span,

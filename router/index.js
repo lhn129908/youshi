@@ -32,6 +32,10 @@ router.get("/", async(req, res) => {
     var dian=await Home.find({lei:"dian"});
     // console.log(dian);
 
+    // var news=await Home.find({lei:"news"});
+
+    // var hang=await Home.find({lei:"hang"});
+
     res.render("index.html",{quan,wei,xing,TVC,xuan,dian});
     console.log("欢迎来到首页！！！")
 });
@@ -112,19 +116,16 @@ router.get("/dong_tai/:id", async (req, res) => {
 // 来到我们
 router.get("/wo_men", (req, res) => {
     res.render("wo_men.html");
-    console.log("欢迎来到我们！！！")
 });
 
 // 来到招聘
 router.get("/zhao_pin", (req, res) => {
     res.render("zhao_pin.html");
-    console.log("欢迎来到招聘！！！")
 });
 
 // 来到联系
 router.get("/lian_xi", (req, res) => {
     res.render("lian_xi.html");
-    console.log("欢迎来到联系！！！")
 });
 
 

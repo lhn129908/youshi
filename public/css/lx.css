@@ -1,0 +1,40 @@
+#lxbody{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.lxbk img{
+    width: 100%;
+    height: 20%;
+}
+.lxbody{
+    max-width: 840px;
+    margin: -73px auto 0;
+    padding: 60px 80px 80px;
+    background: #e7e7e8;
+    color: #444;
+    position: relative;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.lxbody h3{
+    font-size: 26px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #27272c;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.lxbody .map img{
+    margin-top: 20px;
+    width: 680px;
+    height: 360px;
+}

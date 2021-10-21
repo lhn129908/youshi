@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +9,14 @@
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
     <!-- 引入首页样式 -->
     <link rel="stylesheet" href="../../public/css/home.css">
+    <!-- 引入拍摄案例样式 -->
+    <link rel="stylesheet" href="../../public/css/example.css">
 
 
     <!-- 引入jquery -->
     <script src="../../node_modules/jquery/dist/jquery.js"></script>
     {{block 'style'}} {{/block}}
 </head>
-
 <body>
     {{include '../_content/top.html'}}
 
@@ -26,10 +26,16 @@
 </body>
     <!-- 引入首页js -->
     <script src="../../public/js/home.js"></script>
+    <!-- 引入拍摄案例js -->
+    <script src="../../public/js/example.js"></script>
+    <script src="../../public/js/time.js"></script>
 
-
-    <!-- 引入招聘 -->
+    <!-- 引入我们js -->
+    <link rel="stylesheet" href="./bootstap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../public/css/weheader.css" />
+    <!-- 引入招聘js -->
     <link rel="stylesheet" href="../public/css/zp.css" />
+    <link rel="stylesheet" href="./bootstap/css/bootstrap.css" />
     <script>
         function one(){
          document.getElementById('light').style.display='block';
@@ -56,7 +62,7 @@
        document.getElementById('ligh').style.display='none'; 
        }
     </script> 
-    <!-- 引入联系样式 -->
+    <!-- 引入联系js -->
     <link rel="stylesheet" href="../public/css/lx.css" />
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=w7lDZk7YtPVsY40cr9rBoknBlYYftiqL"></script>
 
