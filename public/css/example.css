@@ -6,7 +6,7 @@ body .ys-banner .container-fluid {
   padding: 0;
 }
 body .ys-works {
-  background-image: url("../img/条纹.png");
+  background-image: url("../images/条纹.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -166,6 +166,9 @@ body .ys-mask .video-mask .video-container .video-introduct h4 {
 }
 body .ys-mask .video-mask .video-container .video-introduct h4 span {
   color: #228250;
+}
+body .ys-mask .video-mask .video-container .video-introduct ul li {
+  list-style: none;
 }
 body .ys-mask .video-mask .video-container .video-introduct ul li a {
   color: #333;

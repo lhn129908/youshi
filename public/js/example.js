@@ -68,16 +68,9 @@ $(function () {
 
   // 鼠标点击遮罩层
   $("#an_li .video-mask").click(function () {
-    // 遮罩层隐藏
-    // $("#an_li .video-mask").addClass("el-not-show");
     // 大视频停止
     $("#big-video")[0].pause();
-    // 导航栏显示
-    $(".dao_hang").removeClass("el-not-show");
-    // 滚动条显示
-    $("html").css("overflow", "visible");
-    // 移除滚动条滚动
-    removeUnScroll();
+
   });
 
   // 鼠标点击播放控件播放
